@@ -1,8 +1,17 @@
 # CLONE-DA-NETFLIX
 
-Versao 0.1
+Versao 0.2
 
-1° Correção de bugs.
+° Correção de bugs.
 
-2° Formulario para inserir email adicionado.
+° Formulario para inserir email adicionado.
+
+03/05/22
+
+° Botão de "entrar" adicionado
+° Detalhes esteticos adicionados.
+° Video de demonstração adicionado.
+° Melhorias no codigo
+
+
 
