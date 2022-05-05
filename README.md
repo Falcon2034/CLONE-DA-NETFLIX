@@ -1,6 +1,6 @@
 # CLONE-DA-NETFLIX
 
-Versao 0.2
+Versao 0.3
 
 ° Correção de bugs.
 
@@ -13,5 +13,8 @@ Versao 0.2
 ° Video de demonstração adicionado.
 ° Melhorias no codigo
 
+05/05
+
+Melhorias esteticas
 
 
