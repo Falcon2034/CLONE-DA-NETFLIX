@@ -24,7 +24,7 @@ img {
 .header {
     position: absolute;
     z-index: 100;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     max-width: 1790px;
@@ -72,7 +72,7 @@ img {
 }
 
 
-/*Aqui na h1, caso feche o colchete, o plano de fundo fica pretoI*/
+
 
 .main h1 {
     font-size: 64px;
@@ -97,17 +97,25 @@ img {
     padding: 20px 10px;
     font-size: 18px;
     font-family: sans-serif;
+    border-radius: 15px;
+    border: none;
 }
 
-.form-cta button{
+button {
+    
+    margin-left: 10px;
     background-color: #e50914 ;
-    outline: none;
-    border: none;
+    outline: none;    border: none;
     color: white;
     font-size: 30px;
     text-transform: uppercase;
-    cursor: pointer:
+    cursor: pointer;
+    border-radius: 13px;
+
+    
+    
 }
+
 
 .form-cta button::after{
     content: '';
@@ -119,11 +127,24 @@ img {
 }
 
 .form-cta button:hover {
-    background: #f40612;
+    background: #f40612;  /*Controle da animação do primeiro botao de "Entrar" */
+    animation: pulsate 1.3s;
+    ease-in-out;
+}
+
+@keyframes pulsate{
+    0%
+{
+    box-shadow: 
+    0 0 25px #d30913, 
+    0 0 50px #e71247;
+    }
 }
 
 .main p {
     font-size: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
     
 }
 
@@ -150,6 +171,11 @@ img {
     padding: 4rem 0;
     border-top: 8px solid #222 ;
     
+}
+
+.login {
+    position: relative;
+    right: 40px;
 }
 
 .section h1 {
@@ -215,5 +241,40 @@ img {
 
 .footer p {
     margin-top: 2rem;
-    margin-left: 16rem;
+    margin-left: 1rem;
+    position: 
+}
+
+.footerInput{
+    padding: 20px 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-radius: 17px;
+    border: none;
+    outline: none;
+}
+
+.footerForm {
+    display: flex;
+    display: grid;
+    grid-template-columns: 500px 250px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    flex-direction: row;
+}
+
+.footerForm button:hover {
+    background: #f40612;  /*Controle da animação do primeiro botao de "Entrar" */
+    animation: pulsate 1.3s;
+    ease-in-out;
+}
+
+@keyframes pulsate{
+    0%
+{
+    box-shadow: 
+    0 0 25px #d30913, 
+    0 0 50px #e71247;
+    }
 }
