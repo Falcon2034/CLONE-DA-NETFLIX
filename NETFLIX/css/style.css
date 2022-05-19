@@ -227,50 +227,61 @@ button {
 }
  /*F.A.Q. */
 
-.faq {
-     width: 100%;
- }
+.accordions {
+     padding: 16px;
+     margin-top: 5px;
+     margin-left: 24;
+    
+     margin: 0 0 8px 0;
+     
+
+     text-align: center;  
+}
+
+.accordion-item input{
+    display:none;
+}
 
 
- .faq h1{
-     text-align: center;   
- }
 
- .faq-list {
-     margin: 50px auto;
-     max-width: 815px;
-     font-size: 26px;
- }
-
- .faq-question,
- .faq-answer {
-     background: #303030;
- }
-
- .faq-question {
-     padding: 20px 30px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     cursor: pointer;
-     margin-top: 8px;
-     margin-bottom: 1px;
- }
-
-.faq-question::after {
-    content: " ";
+ .accordion-item label{
+    
+    width: 100%; 
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    margin-bottom: 5px;
+    margin-left: 1.1em;
+    font-weight: 400;
+    border:1px solid #ccc;
+    position: relative;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
     display: block;
-    width: 20px;
-    height: 20px;
-    background: url("../img/fechar.jpg") no repeat center center;
-    transform: rotate(45deg);
+    justify-content: space-between;
+    align-items: center;
+    display: block;
+    text-align: left;
+    background: #303030;   
 }
 
-.faq-answer > div {
+ .accordion-content {
+     height: 0px;
+     overflow: hidden;
+     -webkit-transition: height 0.3s ease-in-out;
+     -moz-transition: height 0.3s ease-in-out;
+     -o-transition: height 0.3s ease-in-out ;
+     -ms-transition: height 0.3s ease-in-out;
+     -ms-transition: heigth 0.3s ease-in-out;
+     }
 
-    padding: 30px;
+     [id^accordion]:checked ~ .accordion-content {
+         height: 100px;
+     } 
 
-}
+     
+
+
+
 
 
 
