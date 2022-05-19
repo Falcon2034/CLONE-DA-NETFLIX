@@ -103,33 +103,40 @@ img {
 
 button {
     
-    margin-left: 10px;
+    margin: 15px;
     background-color: #e50914 ;
-    outline: none;    border: none;
+    outline: none;
+    border: 2px red solid;
+    border-radius: 5px;
+    text-shadow: 3px 3px 3px rgb(0,0,0);
+    box-shadow:2px 2px 2px rgb(121,52);
+    transition: 0.3ms;
     color: white;
-    font-size: 30px;
+    height: 60px;
+    font-size: 24px;
     text-transform: uppercase;
     cursor: pointer;
-    border-radius: 13px;
-
-    
-    
+    border-radius: 15px; 
 }
 
-
-.form-cta button::after{
-    content: '';
-    display: inline-block;
-    width: 10px;
-    height: 20px;
-    background: url("../img/seta.svg");
-    margin-left: 20px;
+button:hover{
+    background-color: darkred;
+    border: 2px darlred solid;
 }
+
+button:active {
+    
+    background-color:rgb(49, 8, 8);
+    box-shadow: 2px 2px 2px rgb(49, 8, 8);
+    transform: translateY(4px);
+    border:none;
+}
+
 
 .form-cta button:hover {
     background: #f40612;  /*Controle da animação do primeiro botao de "Entrar" */
     animation: pulsate 1.3s;
-    ease-in-out;
+    
 }
 
 @keyframes pulsate{
@@ -228,13 +235,10 @@ button {
  /*F.A.Q. */
 
 .accordions {
-     padding: 16px;
+     padding: 150px;
      margin-top: 5px;
-     margin-left: 24;
-    
+     margin-left: 24; 
      margin: 0 0 8px 0;
-     
-
      text-align: center;  
 }
 
@@ -243,6 +247,16 @@ button {
 }
 
 
+.h1 {
+    
+    display: block;
+    margin-left: 2rem;
+    font-size: 1em;
+    font-weight: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1px;  
+}
 
  .accordion-item label{
     
@@ -274,7 +288,7 @@ button {
      -ms-transition: heigth 0.3s ease-in-out;
      }
 
-     [id^accordion]:checked ~ .accordion-content {
+     [id^=accordion]:checked ~ .accordion-content {
          height: 100px;
      } 
 
@@ -304,7 +318,7 @@ button {
 .footer p {
     margin-top: 2rem;
     margin-left: 1rem;
-    position: 
+    position: center;
 }
 
 .footerInput{
@@ -314,22 +328,26 @@ button {
     border-radius: 17px;
     border: none;
     outline: none;
+    position: center;
 }
 
 .footerForm {
-    display: flex;
+    
     display: grid;
     grid-template-columns: 500px 250px;
     margin-top: 30px;
+    margin-left: 9rem;
     margin-bottom: 10px;
     position: relative;
     flex-direction: row;
+    
 }
 
 .footerForm button:hover {
     background: #f40612;  /*Controle da animação do primeiro botao de "Entrar" */
     animation: pulsate 1.3s;
-    ease-in-out;
+    
+    
 }
 
 @keyframes pulsate{
