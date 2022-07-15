@@ -103,40 +103,33 @@ img {
 
 button {
     
-    margin: 15px;
+    margin-left: 10px;
     background-color: #e50914 ;
-    outline: none;
-    border: 2px red solid;
-    border-radius: 5px;
-    text-shadow: 3px 3px 3px rgb(0,0,0);
-    box-shadow:2px 2px 2px rgb(121,52);
-    transition: 0.3ms;
+    outline: none;    border: none;
     color: white;
-    height: 60px;
-    font-size: 24px;
+    font-size: 30px;
     text-transform: uppercase;
     cursor: pointer;
-    border-radius: 15px; 
-}
+    border-radius: 13px;
 
-button:hover{
-    background-color: darkred;
-    border: 2px darlred solid;
-}
-
-button:active {
     
-    background-color:rgb(49, 8, 8);
-    box-shadow: 2px 2px 2px rgb(49, 8, 8);
-    transform: translateY(4px);
-    border:none;
+    
 }
 
+
+.form-cta button::after{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: url("../img/seta.svg");
+    margin-left: 20px;
+}
 
 .form-cta button:hover {
     background: #f40612;  /*Controle da animação do primeiro botao de "Entrar" */
     animation: pulsate 1.3s;
-    
+    ease-in-out;
 }
 
 @keyframes pulsate{
@@ -234,68 +227,50 @@ button:active {
 }
  /*F.A.Q. */
 
-.accordions {
-     padding: 150px;
-     margin-top: 5px;
-     margin-left: 24; 
-     margin: 0 0 8px 0;
-     text-align: center;  
-}
-
-.accordion-item input{
-    display:none;
-}
+.faq {
+     width: 100%;
+ }
 
 
-.h1 {
-    
+ .faq h1{
+     text-align: center;   
+ }
+
+ .faq-list {
+     margin: 50px auto;
+     max-width: 815px;
+     font-size: 26px;
+ }
+
+ .faq-question,
+ .faq-answer {
+     background: #303030;
+ }
+
+ .faq-question {
+     padding: 20px 30px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     cursor: pointer;
+     margin-top: 8px;
+     margin-bottom: 1px;
+ }
+
+.faq-question::after {
+    content: " ";
     display: block;
-    margin-left: 2rem;
-    font-size: 1em;
-    font-weight: absolute;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 1px;  
+    width: 20px;
+    height: 20px;
+    background: url("../img/fechar.jpg") no repeat center center;
+    transform: rotate(45deg);
 }
 
- .accordion-item label{
-    
-    width: 100%; 
-    padding: 0.8em 2.2em 0.8em 1.2em;
-    margin-bottom: 5px;
-    margin-left: 1.1em;
-    font-weight: 400;
-    border:1px solid #ccc;
-    position: relative;
-    width: 100%;
-    border: 0;
-    cursor: pointer;
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-    display: block;
-    text-align: left;
-    background: #303030;   
+.faq-answer > div {
+
+    padding: 30px;
+
 }
-
- .accordion-content {
-     height: 0px;
-     overflow: hidden;
-     -webkit-transition: height 0.3s ease-in-out;
-     -moz-transition: height 0.3s ease-in-out;
-     -o-transition: height 0.3s ease-in-out ;
-     -ms-transition: height 0.3s ease-in-out;
-     -ms-transition: heigth 0.3s ease-in-out;
-     }
-
-     [id^=accordion]:checked ~ .accordion-content {
-         height: 100px;
-     } 
-
-     
-
-
-
 
 
 
@@ -318,7 +293,7 @@ button:active {
 .footer p {
     margin-top: 2rem;
     margin-left: 1rem;
-    position: center;
+    position: 
 }
 
 .footerInput{
@@ -328,26 +303,22 @@ button:active {
     border-radius: 17px;
     border: none;
     outline: none;
-    position: center;
 }
 
 .footerForm {
-    
+    display: flex;
     display: grid;
     grid-template-columns: 500px 250px;
     margin-top: 30px;
-    margin-left: 9rem;
     margin-bottom: 10px;
     position: relative;
     flex-direction: row;
-    
 }
 
 .footerForm button:hover {
     background: #f40612;  /*Controle da animação do primeiro botao de "Entrar" */
     animation: pulsate 1.3s;
-    
-    
+    ease-in-out;
 }
 
 @keyframes pulsate{
