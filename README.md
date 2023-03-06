@@ -1,20 +1,5 @@
-# CLONE-DA-NETFLIX
+Clone da pagina inicial da Netflix 
 
-Versao 0.3
 
-° Correção de bugs.
-
-° Formulario para inserir email adicionado.
-
-03/05/22
-
-° Botão de "entrar" adicionado
-° Detalhes esteticos adicionados.
-° Video de demonstração adicionado.
-° Melhorias no codigo
-
-05/05
-
-Melhorias esteticas
-
+Deploy - Clique aqui para ver o projeto -> https://d-netflix-clone.netlify.app
 
